@@ -39,11 +39,11 @@ vim.keymap.set('n', '<leader>cm', '<cmd>Mason<cr>', { desc = 'Mason' })
 vim.keymap.set('n', '<leader>clz', '<cmd>Lazy<cr>', { desc = 'lazy.nvim' })
 
 -- Cycle between buffers
-vim.keymap.set('n', '<Tab>', '<cmd>bnext<CR>', { desc = 'Next buffer' })
-vim.keymap.set('n', '<S-Tab>', '<cmd>bprev<CR>', { desc = 'Previous buffer' })
+vim.keymap.set('n', '<Tab>', '<cmd>BufferLineCycleNext<CR>', { desc = 'Next buffer' })
+vim.keymap.set('n', '<S-Tab>', '<cmd>BufferLineCyclePrev<CR>', { desc = 'Previous buffer' })
 
-vim.keymap.set('n', '<leader>bn', '<cmd>BufferLineMoveNext<CR>', { desc = '[B]uffer [N]ext' })
-vim.keymap.set('n', '<leader>bp', '<cmd>BufferLineMovePrev<CR>', { desc = '[B]uffer [P]revious' })
+vim.keymap.set('n', '<leader>bn', '<cmd>BufferLineCycleNext<CR>', { desc = '[B]uffer [N]ext' })
+vim.keymap.set('n', '<leader>bp', '<cmd>BufferLineCyclePrev<CR>', { desc = '[B]uffer [P]revious' })
 
 -- Reorder buffers
 vim.keymap.set('n', '<leader>bl', '<cmd>BufferLineMoveNext<CR>', { desc = '[B]uffer move [L] -> right' })
