@@ -35,6 +35,9 @@ return {
         lua = { 'stylua' },
         tex = { 'tex-fmt' },
         python = { 'ruff_format' },
+        go = { 'gofumpt' },
+        markdown = { 'prettier' },
+        json = { 'prettier' },
         -- c = { 'clang-format' },
         -- Conform can also run multiple formatters sequentially
         -- python = { "isort", "black" },
