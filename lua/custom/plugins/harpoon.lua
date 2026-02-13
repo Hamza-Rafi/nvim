@@ -27,7 +27,9 @@ return {
         function()
           require('harpoon'):list():select(i)
         end,
-        desc = 'Harpoon to File' .. i,
+        -- desc = 'Harpoon to File ' .. i,
+        desc = 'which_key_ignore',
+        hidden = true,
       })
     end
 
