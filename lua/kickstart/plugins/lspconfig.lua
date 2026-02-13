@@ -188,6 +188,17 @@ return {
         --    https://github.com/pmizio/typescript-tools.nvim
         --
         -- But for many setups, the LSP (`ts_ls`) will work just fine
+        clangd = {
+          cmd = {
+            'clangd',
+            '--background-index',
+            '--header-insertion=iwyu',
+            '--completion-style=detailed',
+            '--cross-file-rename',
+            '-j=4',
+            '--function-arg-placeholders',
+          },
+        },
         ts_ls = {
           init_options = {
             plugins = {
@@ -223,6 +234,9 @@ return {
               },
               -- You can toggle below to ignore Lua_LS's noisy `missing-fields` warnings
               -- diagnostics = { disable = { 'missing-fields' } },
+              diagnostics = {
+                globals = { 'vim' },
+              },
             },
           },
         },

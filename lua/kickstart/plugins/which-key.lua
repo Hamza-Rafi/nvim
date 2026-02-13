@@ -58,6 +58,7 @@ return {
       -- Document existing key chains
       spec = {
         { '<leader>c', group = '[C]ode', mode = { 'n', 'x' } },
+        { '<leader>b', group = '[B]uffer' },
         { '<leader>d', group = '[D]ocument' },
         { '<leader>f', group = '[F]ind' },
         { '<leader>g', group = 'Git' },
