@@ -15,6 +15,7 @@ return {
         'gowork',
         'bash',
         'c',
+        'cpp',
         'diff',
         'html',
         'lua',
@@ -35,7 +36,7 @@ return {
         additional_vim_regex_highlighting = false,
         -- additional_vim_regex_highlighting = { 'ruby' },
       },
-      indent = { enable = true, disable = { 'ruby' } },
+      indent = { enable = true, disable = { 'ruby', 'c', 'cpp' } },
       textobjects = {
         select = {
           enable = true,
