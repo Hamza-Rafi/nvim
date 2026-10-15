@@ -188,6 +188,9 @@ return {
         --    https://github.com/pmizio/typescript-tools.nvim
         --
         -- But for many setups, the LSP (`ts_ls`) will work just fine
+        gopls = {
+          gofumpt = true,
+        },
         clangd = {
           cmd = {
             'clangd',

@@ -35,7 +35,7 @@ return {
         lua = { 'stylua' },
         tex = { 'tex-fmt' },
         python = { 'ruff_format' },
-        go = { 'gofumpt' },
+        go = { 'goimports', 'gofumpt' },
         markdown = { 'prettier' },
         json = { 'prettier' },
         -- c = { 'clang-format' },
